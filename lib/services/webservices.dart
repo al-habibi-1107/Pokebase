@@ -19,7 +19,7 @@ Future<List<Pokemon>> fetchPokemons()async{
   return item.map((poke){
      i++;
      var img= "https://pokeres.bastionbot.org/images/pokemon/$i.png";
-     return Pokemon.fromjson(json, img);
+     return Pokemon.fromjson(i,poke['name'], img);
    }).toList();
 
  }else{

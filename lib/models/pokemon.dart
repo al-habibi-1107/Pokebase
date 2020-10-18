@@ -11,7 +11,7 @@ class Pokemon {
     @required this.imgUrl,
   });
 
-  factory Pokemon.fromjson(Map<String,dynamic> json,String img){
-    return Pokemon(id: json['id'],name: json['name'],imgUrl: img);
+  factory Pokemon.fromjson(int id, String name,String img){
+    return Pokemon(id: id,name: name,imgUrl: img);
   }
 }
