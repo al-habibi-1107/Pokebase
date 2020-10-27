@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Poke-Base",
-      theme: ThemeData(primarySwatch: Colors.yellow),
       home: ChangeNotifierProvider(
         create: (context)=>PokemonListViewModel(),
         child: HomePage(),
